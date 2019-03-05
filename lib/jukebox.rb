@@ -61,6 +61,7 @@ def run(jukebox_songs)
     elsif command == "help"
       help
     end
+    command = get.chomp
   end
   
   if command == "exit"
