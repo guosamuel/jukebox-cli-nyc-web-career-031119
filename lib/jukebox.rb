@@ -46,4 +46,5 @@ def play(songs_list)
       end
     end
   end
+  binding.pry
 end
