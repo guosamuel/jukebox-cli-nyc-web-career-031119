@@ -35,15 +35,16 @@ end
 def play(songs_list)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
+  
   if (user_input.to_i < 10 && user_input.to_i > 0)
-    puts "Playing #{songs_list[user_input.to_i - 1]}"
-  else
-    songs_list.each do |song|
-      if user_input == song
-        return "Playing #{song}"
-      else
-        puts "Invalid input, please try again"
-      end
+    return "Playing #{songs_list[user_input.to_i - 1]}"
+  end
+  
+  songs_list.each do |song|
+    if user_input == song
+      return "Playing #{song}"
     end
   end
+  
+  return ""
 end
