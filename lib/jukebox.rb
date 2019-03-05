@@ -61,6 +61,8 @@ def run(jukebox_songs)
     elsif command == "help"
       help
     end
+    help
+    puts "Please enter a command:"
     command = get.chomp
   end
   
