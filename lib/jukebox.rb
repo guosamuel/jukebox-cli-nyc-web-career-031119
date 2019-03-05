@@ -54,5 +54,14 @@ def run(jukebox_songs)
   puts "Please enter a command:"
   command = gets.chomp
   until command == "exit"
-    
+    if command == "list"
+      list(jukebox_songs)
+    elsif command == "play"
+      play(jukebox_songs)
+    elsif command == "help"
+      help(jukebox_songs)
+    elsif command == "exit"
+      exit_jukebox
+    end
+  end
 end  
