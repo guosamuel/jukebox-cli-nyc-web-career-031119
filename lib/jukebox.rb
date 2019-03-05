@@ -35,6 +35,7 @@ end
 def play(songs_list)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
+  binding.pry
   if (user_input.to_i < 10 && user_input.to_i > 0)
     puts "Playing #{songs_list[user_input.to_i]}"
   elsif !(user_input.to_i < 10 && user_input.to_i > 0)
@@ -47,5 +48,4 @@ def play(songs_list)
     puts "Invalid input, please try again"
     play(songs_list)
   end
-  binding.pry
 end
