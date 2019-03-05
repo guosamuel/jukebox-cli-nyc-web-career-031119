@@ -43,7 +43,6 @@ def play(songs_list)
         return "Playing #{song}"
       else
         puts "Invalid input, please try again"
-        
       end
     end
   end
