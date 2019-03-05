@@ -46,5 +46,5 @@ def play(songs_list)
     end
   end
   
-  return ""
+  return "Invalid input, please try again"
 end
