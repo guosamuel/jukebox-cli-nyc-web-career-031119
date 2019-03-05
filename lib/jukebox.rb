@@ -35,7 +35,7 @@ def play(songs_list)
   user_input = gets.chomp
   if (user_input.to_i < 10 && user_input.to_i > 0)
     puts "Playing #{songs_list[user_input.to_i]}"
-  elsif 
+  elsif !(user_input.to_i < 10 && user_input.to_i > 0)
     songs_list.each do |song|
       if user_input == song
         puts "Playing #{song}"
