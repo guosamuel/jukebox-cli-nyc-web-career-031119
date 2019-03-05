@@ -43,6 +43,6 @@ def play(songs_list)
     end
   else
     puts "Invalid input, please try again"
-    play(songs)
+    play(songs_list)
   end
 end
