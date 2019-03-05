@@ -50,3 +50,7 @@ def play(songs_list)
 end
 
 def run(jukebox_songs)
+  help
+  puts "Please enter a command:"
+  command = gets.chomp
+end  
