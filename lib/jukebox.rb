@@ -60,8 +60,10 @@ def run(jukebox_songs)
       play(jukebox_songs)
     elsif command == "help"
       help
-    elsif command == "exit"
-      exit_jukebox
     end
+  end
+  
+  if command == "exit"
+    exit_jukebox
   end
 end  
