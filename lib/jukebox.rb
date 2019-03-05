@@ -34,7 +34,7 @@ def play(songs_list)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   if (user_input < 10 && user_input > 0)
-    puts "Playing #{songs_list[user_input)}"
+    puts "Playing #{songs_list[user_input]}"
   elsif
     songs.each do |song|
       if user_input == song
