@@ -40,7 +40,7 @@ def play(songs_list)
   elsif !(user_input.to_i < 10 && user_input.to_i > 0)
     songs_list.each do |song|
       if user_input == song
-        puts "Playing #{song}"
+        return "Playing #{song}"
       end
     end
   else
