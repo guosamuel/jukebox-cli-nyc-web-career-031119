@@ -40,7 +40,7 @@ def play(songs_list)
   else
     songs_list.each do |song|
       if user_input == song
-        puts "Playing #{song}"
+        return "Playing #{song}"
       else
         puts "Invalid input, please try again"
       end
